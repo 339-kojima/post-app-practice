@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="_H4W2b3ClUKZ1Qy7eTA0">
+    <mxGraphModel dx="811" dy="380" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="w8cl9kruDDJrXezntKOf-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" value="セルフレジ" vertex="1">
+          <mxGeometry height="260" width="180" x="323" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="w8cl9kruDDJrXezntKOf-13" edge="1" parent="1" source="w8cl9kruDDJrXezntKOf-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="w8cl9kruDDJrXezntKOf-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w8cl9kruDDJrXezntKOf-14" edge="1" parent="1" source="w8cl9kruDDJrXezntKOf-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" target="w8cl9kruDDJrXezntKOf-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="w8cl9kruDDJrXezntKOf-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="お客さん" vertex="1">
+          <mxGeometry height="60" width="30" x="100" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="w8cl9kruDDJrXezntKOf-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="商品を読み取る" vertex="1">
+          <mxGeometry height="80" width="120" x="353" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="w8cl9kruDDJrXezntKOf-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="支払う" vertex="1">
+          <mxGeometry height="80" width="120" x="353" y="450" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

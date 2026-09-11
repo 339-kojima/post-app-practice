@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="ieN0hTylfo9qPmUSFgSH">
+    <mxGraphModel dx="892" dy="478" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelPosition=center;verticalLabelPosition=middle;align=center;verticalAlign=top;" value="投稿アプリ" vertex="1">
+          <mxGeometry height="670" width="170" x="495" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-13" edge="1" parent="1" source="twp8T4HlBXBEQXwYB0VI-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="twp8T4HlBXBEQXwYB0VI-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-14" edge="1" parent="1" source="twp8T4HlBXBEQXwYB0VI-1" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;startArrow=none;startFill=0;endArrow=none;endFill=0;" target="twp8T4HlBXBEQXwYB0VI-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-1" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="訪問者" vertex="1">
+          <mxGeometry height="60" width="30" x="384" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-15" edge="1" parent="1" source="twp8T4HlBXBEQXwYB0VI-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="twp8T4HlBXBEQXwYB0VI-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-17" edge="1" parent="1" source="twp8T4HlBXBEQXwYB0VI-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="twp8T4HlBXBEQXwYB0VI-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-18" edge="1" parent="1" source="twp8T4HlBXBEQXwYB0VI-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="twp8T4HlBXBEQXwYB0VI-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="ログインした利用者" vertex="1">
+          <mxGeometry height="60" width="30" x="740" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="アプリへ登録する" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-7" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="アプリへログインする" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="アプリからログアウトする" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-9" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="投稿の一覧を表示する" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="自分の投稿のみを編集する" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="自分の投稿のみを削除する" vertex="1">
+          <mxGeometry height="80" width="120" x="520" y="585" as="geometry" />
+        </mxCell>
+        <mxCell id="twp8T4HlBXBEQXwYB0VI-16" edge="1" parent="1" source="twp8T4HlBXBEQXwYB0VI-2" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.3333333333333333;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;" target="twp8T4HlBXBEQXwYB0VI-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

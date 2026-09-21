@@ -1,0 +1,141 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="C7JtyTppjacnaGY2zmSq">
+    <mxGraphModel dx="887" dy="880" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="メニュー選択画面" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文確定画面" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-3" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="24d-awLI-3f6ZaoY4MtG-2" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="110" as="sourcePoint" />
+            <mxPoint x="130" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-4" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="商品と個数を選び、&lt;div&gt;「かごに入れる」を押す&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.16" as="geometry">
+            <mxPoint y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="支払い画面" vertex="1">
+          <mxGeometry height="55" width="120" x="160" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-6" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="24d-awLI-3f6ZaoY4MtG-5" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="215" y="228" as="sourcePoint" />
+            <mxPoint x="200" y="273" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-7" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="「支払いに進む」&lt;div&gt;を押す&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.1333" y="1" as="geometry">
+            <mxPoint x="-1" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="支払い完了画面" vertex="1">
+          <mxGeometry height="60" width="120" x="160" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文状況確認画面" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文一覧画面" vertex="1">
+          <mxGeometry height="60" width="120" x="60" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="注文引渡完了画面" vertex="1">
+          <mxGeometry height="60" width="120" x="440" y="525" as="geometry" />
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-12" edge="1" parent="1" style="curved=0;endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="190" />
+              <mxPoint x="60" y="70" />
+            </Array>
+            <mxPoint x="160" y="190" as="sourcePoint" />
+            <mxPoint x="160" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-13" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-12" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="「メニュー一覧に戻る」&lt;br&gt;を押す" vertex="1">
+          <mxGeometry relative="1" x="-0.1" as="geometry">
+            <mxPoint x="10" y="-26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-16" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-5" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="24d-awLI-3f6ZaoY4MtG-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="230" y="360" as="sourcePoint" />
+            <mxPoint x="220" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-17" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-16" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="支払いを終える" vertex="1">
+          <mxGeometry relative="1" x="-0.1636" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-20" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-8" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="24d-awLI-3f6ZaoY4MtG-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="225" y="475" as="sourcePoint" />
+            <mxPoint x="245" y="535" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-23" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="「注文の状況を見る」&lt;div&gt;を押す&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0463" y="4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-21" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-10" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="24d-awLI-3f6ZaoY4MtG-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="515" y="695" as="sourcePoint" />
+            <mxPoint x="500" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-22" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="「引渡し済み」&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;を押す&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0845" y="2" as="geometry">
+            <mxPoint x="-21" y="17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-26" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-9" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;entryX=1;entryY=0.75;entryDx=0;entryDy=0;exitX=0.125;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;" target="24d-awLI-3f6ZaoY4MtG-1" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="460.06" y="400.06" />
+              <mxPoint x="460.06" y="85" />
+            </Array>
+            <mxPoint x="460.06" y="245" as="sourcePoint" />
+            <mxPoint x="325" y="85" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-27" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-26" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="「メニューに戻る」&lt;div&gt;を押す&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.459" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-28" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-1" style="edgeStyle=segmentEdgeStyle;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.834;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" target="24d-awLI-3f6ZaoY4MtG-9" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="540.05" y="55" />
+            </Array>
+            <mxPoint x="465" y="60.000000000000114" as="sourcePoint" />
+            <mxPoint x="560" y="385" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-29" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="「注文の状況を見る」&lt;div&gt;を押す&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.3115" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-30" edge="1" parent="1" source="24d-awLI-3f6ZaoY4MtG-11" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="24d-awLI-3f6ZaoY4MtG-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="390" y="540" as="sourcePoint" />
+            <mxPoint x="275" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24d-awLI-3f6ZaoY4MtG-31" connectable="0" parent="24d-awLI-3f6ZaoY4MtG-30" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="「引渡済み」にして、引渡完了した注文を&lt;div&gt;一覧から消す&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2751" y="3" as="geometry">
+            <mxPoint x="-31" y="-18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

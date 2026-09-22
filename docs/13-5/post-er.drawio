@@ -1,0 +1,41 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="oHVVjEDwO05xPhN0kicU">
+    <mxGraphModel dx="868" dy="580" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="9NBdzR82fASroSulhZDG-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;flipV=1;legacyAnchorPoints=0;" value="posts" vertex="1">
+          <mxGeometry height="60" width="120" x="340" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="9NBdzR82fASroSulhZDG-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;flipV=1;legacyAnchorPoints=0;" value="categories" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="9NBdzR82fASroSulhZDG-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;flipV=1;legacyAnchorPoints=0;" value="users" vertex="1">
+          <mxGeometry height="60" width="120" x="80" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="9NBdzR82fASroSulhZDG-5" edge="1" parent="1" source="9NBdzR82fASroSulhZDG-3" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;startSize=8;endSize=8;curved=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="9NBdzR82fASroSulhZDG-1" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="85" y="250" as="sourcePoint" />
+            <mxPoint x="185" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9NBdzR82fASroSulhZDG-7" connectable="0" parent="9NBdzR82fASroSulhZDG-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="1人のユーザーは、&lt;div&gt;複数の投稿を書く&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0576" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9NBdzR82fASroSulhZDG-6" edge="1" parent="1" source="9NBdzR82fASroSulhZDG-2" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;startSize=8;endSize=8;curved=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="9NBdzR82fASroSulhZDG-1" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="210" y="310" as="sourcePoint" />
+            <mxPoint x="345" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9NBdzR82fASroSulhZDG-8" connectable="0" parent="9NBdzR82fASroSulhZDG-6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="1つのカテゴリには、&lt;div&gt;複数の投稿が属する&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0497" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

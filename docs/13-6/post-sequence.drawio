@@ -1,0 +1,178 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="3qV8l_8aujqkYP4yHUhd">
+    <mxGraphModel dx="871" dy="621" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="kKSVIpLtsoQNHge24ho3-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="ブラウザ" vertex="1">
+          <mxGeometry height="40" width="120" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="PostController" vertex="1">
+          <mxGeometry height="40" width="120" x="200" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Post" vertex="1">
+          <mxGeometry height="40" width="120" x="380" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="データベース" vertex="1">
+          <mxGeometry height="40" width="120" x="560" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-5" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="259.5" y="580" as="sourcePoint" />
+            <mxPoint x="259.5" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-6" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="580" as="sourcePoint" />
+            <mxPoint x="440" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-7" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="580" as="sourcePoint" />
+            <mxPoint x="620" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-8" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="79.5" y="580" as="sourcePoint" />
+            <mxPoint x="79.5" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="120" as="sourcePoint" />
+            <mxPoint x="260" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-10" connectable="0" parent="kKSVIpLtsoQNHge24ho3-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="直したタイトル・&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;カテゴリ&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;・&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;本文&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;を送る&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.232" y="1" as="geometry">
+            <mxPoint x="28" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="160" as="sourcePoint" />
+            <mxPoint x="440" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-19" connectable="0" parent="kKSVIpLtsoQNHge24ho3-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="この内容で投稿を&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;書き換えるよう頼む&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.232" y="1" as="geometry">
+            <mxPoint x="21" y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-21" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="200" as="sourcePoint" />
+            <mxPoint x="620" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-22" connectable="0" parent="kKSVIpLtsoQNHge24ho3-21" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="その1行を書き換える" vertex="1">
+          <mxGeometry relative="1" x="-0.232" y="1" as="geometry">
+            <mxPoint x="21" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-23" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="240" as="sourcePoint" />
+            <mxPoint x="440" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-24" connectable="0" parent="kKSVIpLtsoQNHge24ho3-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="書き換えられたことを返す" vertex="1">
+          <mxGeometry relative="1" x="-0.06" y="-2" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-25" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="280" as="sourcePoint" />
+            <mxPoint x="260" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-26" connectable="0" parent="kKSVIpLtsoQNHge24ho3-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="書き換えた投稿を返す" vertex="1">
+          <mxGeometry relative="1" x="-0.06" y="-2" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-27" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="320" as="sourcePoint" />
+            <mxPoint x="80" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-28" connectable="0" parent="kKSVIpLtsoQNHge24ho3-27" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="投稿一覧画面へ行くよう返す" vertex="1">
+          <mxGeometry relative="1" x="-0.06" y="-2" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-29" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="80" y="360" as="sourcePoint" />
+            <mxPoint x="260" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-30" connectable="0" parent="kKSVIpLtsoQNHge24ho3-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="投稿一覧を求める" vertex="1">
+          <mxGeometry relative="1" x="-0.232" y="1" as="geometry">
+            <mxPoint x="21" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-31" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="400" as="sourcePoint" />
+            <mxPoint x="440" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-32" connectable="0" parent="kKSVIpLtsoQNHge24ho3-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="新しい准に投稿を取って&lt;div&gt;くるよう頼む&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.232" y="1" as="geometry">
+            <mxPoint x="21" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-33" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="440" as="sourcePoint" />
+            <mxPoint x="620" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-34" connectable="0" parent="kKSVIpLtsoQNHge24ho3-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="投稿の行と、執筆者と&lt;div&gt;カテゴリを読む&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.232" y="1" as="geometry">
+            <mxPoint x="21" y="-14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-35" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="620" y="480" as="sourcePoint" />
+            <mxPoint x="440" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-36" connectable="0" parent="kKSVIpLtsoQNHge24ho3-35" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="読んだ行を返す" vertex="1">
+          <mxGeometry relative="1" x="-0.06" y="-2" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-37" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="440" y="500" as="sourcePoint" />
+            <mxPoint x="260" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-38" connectable="0" parent="kKSVIpLtsoQNHge24ho3-37" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="投稿の一覧を返す" vertex="1">
+          <mxGeometry relative="1" x="-0.06" y="-2" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-39" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="260" y="540" as="sourcePoint" />
+            <mxPoint x="80" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKSVIpLtsoQNHge24ho3-40" connectable="0" parent="kKSVIpLtsoQNHge24ho3-39" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="投稿一覧画面を返す" vertex="1">
+          <mxGeometry relative="1" x="-0.06" y="-2" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

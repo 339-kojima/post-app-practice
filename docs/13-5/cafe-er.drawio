@@ -1,0 +1,41 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="Q3EfJsKqYuln8H45heF1">
+    <mxGraphModel dx="438" dy="440" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NmratT5eN1BtVIQMMBIL-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="orders" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NmratT5eN1BtVIQMMBIL-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="order_items" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="NmratT5eN1BtVIQMMBIL-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="products" vertex="1">
+          <mxGeometry height="60" width="120" x="120" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="NmratT5eN1BtVIQMMBIL-4" edge="1" parent="1" source="NmratT5eN1BtVIQMMBIL-1" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERoneToMany;startArrow=ERmandOne;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="NmratT5eN1BtVIQMMBIL-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="255" y="70" as="sourcePoint" />
+            <mxPoint x="375" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NmratT5eN1BtVIQMMBIL-6" connectable="0" parent="NmratT5eN1BtVIQMMBIL-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;件の注文は、1つ以上の&lt;/span&gt;&lt;div&gt;注文明細を持つ&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.27" y="2" as="geometry">
+            <mxPoint x="26" y="10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NmratT5eN1BtVIQMMBIL-5" edge="1" parent="1" source="NmratT5eN1BtVIQMMBIL-3" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="NmratT5eN1BtVIQMMBIL-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="255" y="320" as="sourcePoint" />
+            <mxPoint x="355" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NmratT5eN1BtVIQMMBIL-9" connectable="0" parent="NmratT5eN1BtVIQMMBIL-5" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="1つの商品は、複数の&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;注文明細&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;に現れることがある&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0641" y="-1" as="geometry">
+            <mxPoint x="27" y="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

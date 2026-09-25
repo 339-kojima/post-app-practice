@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="nv1-BfF4_-m90ec5zBS9" name="ページ-1">
+    <mxGraphModel dx="483" dy="440" grid="1" gridSize="4" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-5" edge="1" parent="1" source="DgLpVFi_Bdy0lPOm8P87-4" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="96" y="84" as="sourcePoint" />
+            <mxPoint x="96" y="128" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=light-dark(#050505, #ededed);" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="86" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-8" edge="1" parent="1" source="DgLpVFi_Bdy0lPOm8P87-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DgLpVFi_Bdy0lPOm8P87-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-9" connectable="0" parent="DgLpVFi_Bdy0lPOm8P87-8" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="支払いが済んだ知らせが届く" vertex="1">
+          <mxGeometry relative="1" x="-0.5942" as="geometry">
+            <mxPoint y="26" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-18" edge="1" parent="1" source="DgLpVFi_Bdy0lPOm8P87-6" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="DgLpVFi_Bdy0lPOm8P87-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="284" y="188" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-20" connectable="0" parent="DgLpVFi_Bdy0lPOm8P87-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="支払い未完了のまま終わる" vertex="1">
+          <mxGeometry relative="1" x="-0.2725" y="-1" as="geometry">
+            <mxPoint x="21" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-6" parent="1" style="whiteSpace=wrap;html=1;" value="支払い待ち" vertex="1">
+          <mxGeometry height="32" width="96" x="48" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-11" edge="1" parent="1" source="DgLpVFi_Bdy0lPOm8P87-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DgLpVFi_Bdy0lPOm8P87-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-12" connectable="0" parent="DgLpVFi_Bdy0lPOm8P87-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="店員が受け渡し済みにする" vertex="1">
+          <mxGeometry relative="1" x="-0.1917" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-19" edge="1" parent="1" source="DgLpVFi_Bdy0lPOm8P87-7" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="DgLpVFi_Bdy0lPOm8P87-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="236" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-21" connectable="0" parent="DgLpVFi_Bdy0lPOm8P87-19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="顧客が取り消す" vertex="1">
+          <mxGeometry relative="1" x="-0.354" as="geometry">
+            <mxPoint x="29" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-7" parent="1" style="whiteSpace=wrap;html=1;" value="受け取り前" vertex="1">
+          <mxGeometry height="32" width="96" x="48" y="256" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-16" edge="1" parent="1" source="DgLpVFi_Bdy0lPOm8P87-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="DgLpVFi_Bdy0lPOm8P87-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-10" parent="1" style="whiteSpace=wrap;html=1;" value="受け渡し済み" vertex="1">
+          <mxGeometry height="32" width="96" x="48" y="368" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=light-dark(#ffffff, #ededed);" value="" vertex="1">
+          <mxGeometry height="20" width="20" x="86" y="464" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-15" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;aspect=fixed;fillColor=light-dark(#050505, #ededed);" value="" vertex="1">
+          <mxGeometry height="14" width="14" x="89" y="467" as="geometry" />
+        </mxCell>
+        <mxCell id="DgLpVFi_Bdy0lPOm8P87-17" parent="1" style="whiteSpace=wrap;html=1;" value="取り消し済み" vertex="1">
+          <mxGeometry height="32" width="96" x="352" y="208" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

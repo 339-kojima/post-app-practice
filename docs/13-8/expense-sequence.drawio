@@ -1,0 +1,162 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="_rPGXDvl2Y6EVKps_oRz">
+    <mxGraphModel dx="1710" dy="580" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="nAinLZhITr9ngiisTIy1-8" edge="1" parent="1" source="nAinLZhITr9ngiisTIy1-1" style="curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-300" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-1" parent="1" style="whiteSpace=wrap;html=1;" value="データベース" vertex="1">
+          <mxGeometry height="40" width="120" x="-360" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-7" edge="1" parent="1" source="nAinLZhITr9ngiisTIy1-2" style="curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-520" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-2" parent="1" style="whiteSpace=wrap;html=1;" value="アプリ" vertex="1">
+          <mxGeometry height="40" width="120" x="-580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-5" edge="1" parent="1" source="nAinLZhITr9ngiisTIy1-3" style="curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-740" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-3" parent="1" style="whiteSpace=wrap;html=1;" value="承認者" vertex="1">
+          <mxGeometry height="40" width="120" x="-800" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-27" edge="1" parent="1" source="nAinLZhITr9ngiisTIy1-4" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=12;startSize=8;endSize=8;endArrow=none;endFill=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-80" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-4" parent="1" style="whiteSpace=wrap;html=1;" value="申請者" vertex="1">
+          <mxGeometry height="40" width="120" x="-140" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-9" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-740" y="140" as="sourcePoint" />
+            <mxPoint x="-520" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-10" connectable="0" parent="nAinLZhITr9ngiisTIy1-9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="差し戻すことと、&lt;div&gt;その&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;理由を送る&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="16" y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-11" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="180" as="sourcePoint" />
+            <mxPoint x="-300" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-12" connectable="0" parent="nAinLZhITr9ngiisTIy1-11" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="その申請がまだ申請中かを読む" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="18" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-13" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="220" as="sourcePoint" />
+            <mxPoint x="-300" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-14" connectable="0" parent="nAinLZhITr9ngiisTIy1-13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="申請の状態を返す" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="18" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-15" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="260" as="sourcePoint" />
+            <mxPoint x="-300" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-16" connectable="0" parent="nAinLZhITr9ngiisTIy1-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="状態と差し戻しの理由を書き換える" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="18" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-18" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="300" as="sourcePoint" />
+            <mxPoint x="-300" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-19" connectable="0" parent="nAinLZhITr9ngiisTIy1-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="書き換えられたことを返す" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="18" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-20" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-740" y="320" as="sourcePoint" />
+            <mxPoint x="-520" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-21" connectable="0" parent="nAinLZhITr9ngiisTIy1-20" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="差し戻したことを返す" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="18" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-25" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="360" as="sourcePoint" />
+            <mxPoint x="-80" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-26" connectable="0" parent="nAinLZhITr9ngiisTIy1-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="申請一覧画面を開く" vertex="1">
+          <mxGeometry relative="1" x="-0.5955" y="-2" as="geometry">
+            <mxPoint x="136" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-28" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="400" as="sourcePoint" />
+            <mxPoint x="-300" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-29" connectable="0" parent="nAinLZhITr9ngiisTIy1-28" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="その社員が出した申請を読む" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="18" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-31" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=classic;startFill=1;endArrow=none;endFill=0;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="440" as="sourcePoint" />
+            <mxPoint x="-300" y="440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-32" connectable="0" parent="nAinLZhITr9ngiisTIy1-31" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="申請の一覧を返す" vertex="1">
+          <mxGeometry relative="1" x="-0.1891" y="-2" as="geometry">
+            <mxPoint x="18" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-33" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;fontSize=12;startSize=8;endSize=8;curved=1;startArrow=none;startFill=0;endArrow=classic;endFill=1;" value="">
+          <mxGeometry relative="1" width="140" as="geometry">
+            <Array as="points" />
+            <mxPoint x="-520" y="480" as="sourcePoint" />
+            <mxPoint x="-80" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nAinLZhITr9ngiisTIy1-34" connectable="0" parent="nAinLZhITr9ngiisTIy1-33" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="差し戻されたことと、その理由を映す" vertex="1">
+          <mxGeometry relative="1" x="-0.5955" y="-2" as="geometry">
+            <mxPoint x="141" y="-12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

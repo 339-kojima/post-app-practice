@@ -1,0 +1,38 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="ページ-1" id="g9-4fdxFxwgr63Sb4OW2">
+    <mxGraphModel dx="812" dy="580" grid="1" gridSize="5" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vYFJY66ew96aL6HN5uRr-1" parent="1" style="whiteSpace=wrap;html=1;" value="users" vertex="1">
+          <mxGeometry height="60" width="260" x="-80" as="geometry" />
+        </mxCell>
+        <mxCell id="vYFJY66ew96aL6HN5uRr-2" parent="1" style="whiteSpace=wrap;html=1;" value="expenses" vertex="1">
+          <mxGeometry height="60" width="260" x="-80" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="vYFJY66ew96aL6HN5uRr-3" edge="1" parent="1" source="vYFJY66ew96aL6HN5uRr-1" style="fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERzeroToOne;rounded=0;startSize=8;endSize=8;curved=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="vYFJY66ew96aL6HN5uRr-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint y="225" as="sourcePoint" />
+            <mxPoint x="135" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vYFJY66ew96aL6HN5uRr-6" connectable="0" parent="vYFJY66ew96aL6HN5uRr-3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="1人の承認者は複数の&lt;div&gt;申請を判断する&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.014" as="geometry">
+            <mxPoint y="-6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vYFJY66ew96aL6HN5uRr-4" edge="1" parent="1" source="vYFJY66ew96aL6HN5uRr-1" style="fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERmandOne;rounded=0;startSize=8;endSize=8;curved=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" target="vYFJY66ew96aL6HN5uRr-2" value="">
+          <mxGeometry height="100" relative="1" width="100" as="geometry">
+            <mxPoint x="-40" y="250" as="sourcePoint" />
+            <mxPoint x="60" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vYFJY66ew96aL6HN5uRr-5" connectable="0" parent="vYFJY66ew96aL6HN5uRr-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" value="1人の社員は&lt;span style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;複数の&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;申請を出す&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.036" y="2" as="geometry">
+            <mxPoint y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

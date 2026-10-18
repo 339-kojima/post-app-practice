@@ -28,7 +28,7 @@ class PostController extends Controller
             [
                 'title' => ['required', 'string', 'max:255'],
                 'category_id' => ['required', 'exists:categories,id'],
-                'content' => ['required', 'string'],
+                'content' => ['required', 'string', 'regex:/\S/'],
             ],
             [
                 'title.required' => 'タイトルを入力してください',
@@ -36,6 +36,7 @@ class PostController extends Controller
                 'category_id.required' => 'トピックを選択してください',
                 'category_id.exists' => '選択したトピックが正しくありません',
                 'content.required' => '本文を入力してください',
+                'content.regex' => '本文を入力してください',
             ],
         );
 

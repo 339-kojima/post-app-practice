@@ -19,6 +19,7 @@
         .logout-btn:hover { background: #F7F8F9; }
         .logout-btn:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; }
         .page-title { padding: 0.55rem 1rem 0.7rem; font-weight: 800; font-size: 1.06rem; }
+        .compose { display: inline-block; margin: 0.8rem 1rem 0; padding: 0.58rem 1rem; border-radius: 999px; background: #0F1419; color: #fff; font-size: 0.85rem; font-weight: 700; }
         .post { display: flex; gap: 0.75rem; padding: 0.9rem 1rem; border-bottom: 1px solid #EFF1F4; }
         .post:hover { background: #F7F8F9; }
         .avatar { width: 44px; height: 44px; border-radius: 999px; flex-shrink: 0; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; }
@@ -56,6 +57,7 @@
         </header>
 
         <main class="feed">
+            <a class="compose" href="{{ route('posts.create') }}">ポストを書く</a>
             @if($posts->isEmpty())
                 <p class="empty">まだポストがありません。</p>
             @else

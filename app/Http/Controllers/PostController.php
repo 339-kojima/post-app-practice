@@ -15,6 +15,36 @@ class PostController extends Controller
         return view('posts.index', compact('posts'));
     }
 
+    public function create()
+    {
+        $categories = Category::orderBy('id')->get();
+
+        return view('posts.create', compact('categories'));
+    }
+
+    public function store(Request $request)
+    {
+        $validated = $request->validate(
+            [
+                'title' => ['required', 'string', 'max:255'],
+                'category_id' => ['required', 'exists:categories,id'],
+                'content' => ['required', 'string', 'regex:/\S/'],
+            ],
+            [
+                'title.required' => 'タイトルを入力してください',
+                'title.max' => 'タイトルは255文字以内で入力してください',
+                'category_id.required' => 'トピックを選択してください',
+                'category_id.exists' => '選択したトピックが正しくありません',
+                'content.required' => '本文を入力してください',
+                'content.regex' => '本文を入力してください',
+            ],
+        );
+
+        $request->user()->posts()->create($validated);
+
+        return redirect()->route('posts.index');
+    }
+
     public function show(Post $post)
     {
         $post->load(['user', 'category', 'replies.user']);

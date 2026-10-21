@@ -18,6 +18,7 @@
 ## テストの実行方法
 
 - テスト一式はリポジトリのルートから `./vendor/bin/sail test` で実行する。
+- 1 クラスだけ実行する場合は `./vendor/bin/sail test tests/Feature/ExampleTest.php` のように、対象のテストファイルを指定する。
 
 ## 失敗時の対応と報告
 

@@ -1,35 +1,60 @@
-# Repository Guidelines
+# リポジトリのガイドライン
 
-## Project Structure & Module Organization
+## プロジェクト構成とモジュールの配置
 
-This is a Laravel 10 application for practicing a post app. Application code lives in `app/`: models, controllers, policies, middleware, and Fortify actions. HTTP routes are in `routes/`; Blade templates and frontend assets are in `resources/views/`, `resources/js/`, and `resources/css/`. Database migrations, factories, and seeders are under `database/`. PHPUnit tests are in `tests/Feature/` and `tests/Unit/`. Put design notes and diagrams in `docs/`; tutorial answer materials are kept separately in `answers/` and do not affect the app.
+このリポジトリは、投稿アプリを練習用に作成する Laravel 10 アプリケーションです。アプリケーションコードは `app/` にあり、モデル、コントローラー、ポリシー、ミドルウェア、Fortify のアクションを配置します。HTTP ルートは `routes/` にあります。Blade テンプレートとフロントエンドのアセットは、それぞれ `resources/views/`、`resources/js/`、`resources/css/` に配置します。データベースのマイグレーション、ファクトリー、シーダーは `database/` の下にあります。設計メモや図は `docs/` に置き、チュートリアルの解答資料はアプリ本体に影響しないよう `answers/` に分けて保管します。
 
-## Build, Test, and Development Commands
+## ビルド、テスト、開発コマンド
 
-Run commands from the repository root with Docker available:
+Docker が利用できる状態で、リポジトリのルートからコマンドを実行します。
 
-- `./vendor/bin/sail up -d` starts the app and its services.
-- `./vendor/bin/sail artisan migrate --seed` creates tables and loads practice data.
-- `./vendor/bin/sail artisan test` runs the PHPUnit suite.
-- `./vendor/bin/sail npm run dev` starts Vite for frontend development.
-- `./vendor/bin/sail npm run build` builds frontend assets for production.
-- `./vendor/bin/sail down` stops the containers.
+- `./vendor/bin/sail up -d` はアプリと関連サービスを起動します。
+- `./vendor/bin/sail artisan migrate --seed` はテーブルを作成し、練習用データを投入します。
+- `./vendor/bin/sail npm run dev` はフロントエンド開発用に Vite を起動します。
+- `./vendor/bin/sail npm run build` は本番用のフロントエンドアセットをビルドします。
+- `./vendor/bin/sail down` はコンテナを停止します。
 
-For initial setup, follow the installation steps in `README.md` before running Sail commands.
+初期セットアップでは、Sail のコマンドを実行する前に `README.md` のインストール手順に従ってください。
 
-## Coding Style & Naming Conventions
+## コーディングスタイルと命名規則
 
-Follow Laravel and PSR-12 conventions for PHP: four spaces, StudlyCase classes (`PostController`), camelCase methods and variables, and descriptive migration names with timestamps. Keep routes RESTful and views organized by feature, such as `resources/views/posts/`. Use Laravel Pint (`./vendor/bin/sail pint`) to format PHP when needed. Keep documentation in Markdown and use clear, task-specific filenames, such as `expense-api.md`.
+PHP のコードは Laravel および PSR-12 の規約に従います。インデントにはスペース 4 つを使い、クラス名は StudlyCase（例：`PostController`）、メソッド名と変数名は camelCase にします。マイグレーションにはタイムスタンプを含む、内容が分かりやすい名前を付けます。ルートは RESTful に保ち、ビューは `resources/views/posts/` のように機能ごとに整理します。必要に応じて Laravel Pint（`./vendor/bin/sail pint`）で PHP の書式を整えます。ドキュメントは Markdown で作成し、`expense-api.md` のように内容が明確でタスクに即したファイル名を付けます。
 
-## Testing Guidelines
+## コミットとプルリクエストのガイドライン
 
-The project uses PHPUnit through Laravel's test runner. Add feature tests for user-visible behavior and authorization, and unit tests for isolated logic. Name test files with the `*Test.php` suffix and test methods descriptively (Laravel's `test_...` style is also suitable). Run the full suite with `./vendor/bin/sail artisan test`.
+最近のコミットメッセージは簡潔で、チュートリアルの節に関係する変更には `13-8: ...` のような接頭辞がよく使われています。同じ形式を使うか、簡潔な命令形の要約を付けてください。コミットの対象は絞り込みます。プルリクエストには、動作またはドキュメントの変更内容、関連するチュートリアルの節や課題を記載し、画面に変更がある場合はスクリーンショットを含めてください。
 
-## Commit & Pull Request Guidelines
+## 設定と安全性
 
-Recent commits use concise descriptions, often prefixed with a tutorial section (for example, `13-8: ...`); use the same pattern when a change belongs to a tutorial, or a short imperative summary otherwise. Keep commits focused. Pull requests should explain the behavior or documentation change, mention related tutorial sections or issues, and include screenshots for visible UI changes. Note the tests or checks run.
+ローカルの認証情報は `.env` に保管し、秘密情報や実際のユーザーデータをコミットしないでください。ローカルでの練習には、シードされたダミーアカウントを使用します。提出前にマイグレーションとシーダーを確認し、意図しない破壊的変更がないことを確かめてください。
 
-## Configuration & Safety
+## アプリケーションの前提
 
-Keep local credentials in `.env`; do not commit secrets or real user data. Use the seeded dummy accounts for local practice. Review migrations and seeders for unintended destructive changes before submitting them.
+### Tutorial 14 の変更対象
 
+- Tutorial 14 では、依頼に記載された簡単な説明に沿って機能を追加する。説明にない機能や仕様は独自に広げない。
+
+### 現行アプリでできること
+
+- ログイン後に投稿一覧を新しい順で見て、投稿の詳細を開ける。
+- 投稿を作成でき、自分の投稿を編集・削除できる。
+- 投稿にリプライを追加でき、自分が書いたリプライを削除できる。
+- 投稿のトピック（カテゴリ）と投稿者を確認できる。
+
+### 現行アプリでできないこと
+
+- 投稿やユーザーの検索、一覧の絞り込みはできない。
+- いいね、フォロー、通知の機能はない。
+- 他のユーザーの投稿やリプライを編集・削除できない。
+
+### 変更せず維持すること
+
+- ログイン必須の投稿一覧・詳細表示と、投稿の新しい順の並びを維持する。
+- 投稿者本人だけが投稿を編集・削除できる認可を維持する。
+- リプライの投稿と、投稿者本人だけが削除できる認可を維持する。
+- 既存の画面、項目、ルート、動作は、依頼で変更対象として示されない限り維持する。
+- 入力チェックでユーザーに表示するエラーメッセージは日本語にする。
+
+## プルリクエスト
+
+- PR本文には変更内容と関連する受け入れ条件を記載し、各条件を満たしたかどうかを明示する。

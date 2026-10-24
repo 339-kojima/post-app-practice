@@ -10,6 +10,7 @@ class PostController extends Controller
 {
     public function index()
     {
+        // 投稿者とトピックをあわせて取得し、新しい投稿順で一覧表示する。
         $posts = Post::with(['user', 'category'])->latest()->get();
 
         return view('posts.index', compact('posts'));

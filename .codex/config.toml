@@ -45,6 +45,15 @@ enabled = true
 [plugins."computer-use@openai-bundled"]
 enabled = true
 
+[[hooks.PostToolUse]]
+matcher = "apply_patch|Edit|Write"
+
+[[hooks.PostToolUse.hooks]]
+type = "command"
+command = '''python3 -c 'exec("""import json, os, shutil, subprocess\nroot = subprocess.run([\"git\", \"rev-parse\", \"--show-toplevel\"], check=True, capture_output=True, text=True).stdout.strip()\nif os.path.isfile(os.path.join(root, \"vendor/bin/sail\")):\n    cmd = [\"./vendor/bin/sail\", \"artisan\", \"test\"]\nelif shutil.which(\"sail\"):\n    cmd = [\"sail\", \"artisan\", \"test\"]\nelse:\n    cmd = None\nresult = subprocess.run(cmd, cwd=root, capture_output=True, text=True) if cmd else None\nif result is None or result.returncode != 0:\n    detail = \"Sail が見つかりません。\" if result is None else result.stdout + result.stderr\n    code = 127 if result is None else result.returncode\n    print(json.dumps({\"continue\": False, \"stopReason\": f\"編集後の Laravel テストが失敗しました (exit {code})。修正して再実行してください。\", \"hookSpecificOutput\": {\"hookEventName\": \"PostToolUse\", \"additionalContext\": detail}}, ensure_ascii=False))""")' '''
+timeout = 1800
+statusMessage = "編集後に Laravel テストを実行中"
+
 [mcp_servers.node_repl]
 args = []
 command = 'C:\Users\misak\AppData\Local\OpenAI\Codex\runtimes\cua_node\78fb63cda1a9e2b2\bin\node_repl.exe'

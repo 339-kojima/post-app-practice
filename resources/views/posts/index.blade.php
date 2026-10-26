@@ -28,6 +28,7 @@
         .post-head .name { font-weight: 700; font-size: 0.94rem; }
         .post-head .time { color: #5B6570; font-size: 0.82rem; font-variant-numeric: tabular-nums; }
         .post-head .time::before { content: "・"; margin-right: 0.05rem; color: #98A1A8; }
+        .edited { color: #5B6570; font-size: 0.78rem; }
         .topic { margin-left: auto; border-radius: 999px; padding: 0.1rem 0.6rem; font-size: 0.7rem; font-weight: 700; }
         .post-title { font-weight: 700; font-size: 0.96rem; margin: 0.28rem 0 0.06rem; }
         .post-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
@@ -100,6 +101,9 @@
                             <div class="post-head">
                                 <span class="name">{{ $post->user->name }}</span>
                                 <span class="time">{{ $post->created_at->format('n月j日 H:i') }}</span>
+                                @if ($post->wasEdited())
+                                    <span class="edited">編集済み</span>
+                                @endif
                                 <span class="topic" style="background: {{ $tBg }}; color: {{ $tFg }};">{{ $post->category->name }}</span>
                             </div>
                             <p class="post-title"><a href="{{ route('posts.show', $post) }}">{{ $post->title }}</a></p>

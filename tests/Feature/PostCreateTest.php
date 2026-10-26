@@ -70,6 +70,34 @@ class PostCreateTest extends TestCase
         $this->assertTrue($createdPost->created_at->greaterThanOrEqualTo($existingPost->created_at));
     }
 
+    public function test_timeline_shows_edited_label_only_after_a_post_is_edited(): void
+    {
+        $user = User::factory()->create();
+        $category = Category::create(['name' => '雑記']);
+        $post = Post::create([
+            'user_id' => $user->id,
+            'category_id' => $category->id,
+            'title' => '編集前のポスト',
+            'content' => '編集前の本文',
+        ]);
+
+        $this->actingAs($user)
+            ->get(route('posts.index'))
+            ->assertOk()
+            ->assertDontSee('編集済み');
+
+        $this->put(route('posts.update', $post), [
+            'title' => '編集後のポスト',
+            'content' => '編集後の本文',
+            'category_id' => $category->id,
+        ])->assertRedirect(route('posts.index'));
+
+        $this->get(route('posts.index'))
+            ->assertOk()
+            ->assertSee('編集後のポスト')
+            ->assertSee('編集済み');
+    }
+
     public function test_post_creation_rejects_invalid_input_and_preserves_old_values(): void
     {
         $user = User::factory()->create();

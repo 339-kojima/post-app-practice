@@ -1,0 +1,38 @@
+- generic [ref=f9e2]:
+  - banner [ref=f9e3]:
+    - generic [ref=f9e4]:
+      - link "つ つぶやき投稿アプリ" [ref=f9e5] [cursor=pointer]:
+        - /url: http://localhost/posts
+        - generic [ref=f9e6]: つ
+        - text: つぶやき投稿アプリ
+      - generic [ref=f9e7]:
+        - generic [ref=f9e8]: はるか（usera@example.com）
+        - button "ログアウト" [ref=f9e10] [cursor=pointer]
+    - generic [ref=f9e11]:
+      - link "← ホーム" [ref=f9e12] [cursor=pointer]:
+        - /url: http://localhost/posts
+      - text: ポスト
+  - main [ref=f9e13]:
+    - article [ref=f9e14]:
+      - generic [ref=f9e15]: そ
+      - generic [ref=f9e16]:
+        - generic [ref=f9e17]:
+          - generic [ref=f9e18]: そうた
+          - generic [ref=f9e19]: ・10月9日 05:50
+          - generic [ref=f9e20]: 雑記
+        - heading "休憩宣言" [level=1] [ref=f9e21]
+        - paragraph [ref=f9e22]: 2時間集中したのでアイス食べます。溶ける前に食べ切るまでが休憩です。
+    - heading "リプライ" [level=2] [ref=f9e23]
+    - article [ref=f9e24]:
+      - generic [ref=f9e25]: は
+      - generic [ref=f9e26]:
+        - generic [ref=f9e27]:
+          - generic [ref=f9e28]: はるか
+          - generic [ref=f9e29]: ・10月19日 08:38
+        - paragraph [ref=f9e30]: UAT reply 19 Oct
+        - button "削除" [ref=f9e32] [cursor=pointer]
+    - generic [ref=f9e33]:
+      - generic [ref=f9e34]: リプライを書く
+      - textbox "リプライを書く" [ref=f9e35]:
+        - /placeholder: 返信を入力
+      - button "リプライ" [ref=f9e36] [cursor=pointer]

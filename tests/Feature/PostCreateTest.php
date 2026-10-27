@@ -81,9 +81,15 @@ class PostCreateTest extends TestCase
             'content' => '編集前の本文',
         ]);
 
+        $post->forceFill([
+            'created_at' => now()->subMinutes(5),
+            'updated_at' => now()->subMinutes(5),
+        ])->save();
+
         $this->actingAs($user)
             ->get(route('posts.index'))
             ->assertOk()
+            ->assertSee('編集前のポスト')
             ->assertDontSee('編集済み');
 
         $this->put(route('posts.update', $post), [

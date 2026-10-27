@@ -1,0 +1,31 @@
+- generic [ref=f7e2]:
+  - banner [ref=f7e3]:
+    - generic [ref=f7e4]:
+      - link "つ つぶやき投稿アプリ" [ref=f7e5] [cursor=pointer]:
+        - /url: http://localhost/posts
+        - generic [ref=f7e6]: つ
+        - text: つぶやき投稿アプリ
+      - generic [ref=f7e7]:
+        - generic [ref=f7e8]: はるか（usera@example.com）
+        - button "ログアウト" [ref=f7e10] [cursor=pointer]
+    - generic [ref=f7e11]:
+      - link "← ホーム" [ref=f7e12] [cursor=pointer]:
+        - /url: http://localhost/posts
+      - text: ポスト
+  - main [ref=f7e13]:
+    - article [ref=f7e14]:
+      - generic [ref=f7e15]: み
+      - generic [ref=f7e16]:
+        - generic [ref=f7e17]:
+          - generic [ref=f7e18]: みお
+          - generic [ref=f7e19]: ・10月9日 03:50
+          - generic [ref=f7e20]: お知らせ
+        - heading "今週の振り返り" [level=1] [ref=f7e21]
+        - paragraph [ref=f7e22]: "進んだこと: 認可の仕組みが分かった。来週: 一覧画面の使い勝手をもう少し良くしたい。"
+    - heading "リプライ" [level=2] [ref=f7e23]
+    - paragraph [ref=f7e24]: まだリプライはありません。
+    - generic [ref=f7e25]:
+      - generic [ref=f7e26]: リプライを書く
+      - textbox "リプライを書く" [ref=f7e27]:
+        - /placeholder: 返信を入力
+      - button "リプライ" [ref=f7e28] [cursor=pointer]

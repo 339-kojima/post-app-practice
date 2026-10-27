@@ -1,0 +1,305 @@
+- generic [ref=f12e2]:
+  - banner [ref=f12e3]:
+    - generic [ref=f12e4]:
+      - link "つ つぶやき投稿アプリ" [ref=f12e5] [cursor=pointer]:
+        - /url: http://localhost/posts
+        - generic [ref=f12e6]: つ
+        - text: つぶやき投稿アプリ
+      - generic [ref=f12e7]:
+        - generic [ref=f12e8]: だいち（userb@example.com）
+        - button "ログアウト" [ref=f12e10] [cursor=pointer]
+    - generic [ref=f12e11]: ホーム
+  - main [ref=f12e12]:
+    - link "ポストを書く" [ref=f12e13] [cursor=pointer]:
+      - /url: http://localhost/posts/create
+    - article [ref=f12e14]:
+      - generic [ref=f12e15]: そ
+      - generic [ref=f12e16]:
+        - generic [ref=f12e17]:
+          - generic [ref=f12e18]: そうた
+          - generic [ref=f12e19]: ・10月9日 05:50
+          - generic [ref=f12e20]: 雑記
+        - paragraph [ref=f12e21]:
+          - link "休憩宣言" [ref=f12e22] [cursor=pointer]:
+            - /url: http://localhost/posts/25
+        - paragraph [ref=f12e23]: 2時間集中したのでアイス食べます。溶ける前に食べ切るまでが休憩です。
+    - article [ref=f12e24]:
+      - generic [ref=f12e25]: み
+      - generic [ref=f12e26]:
+        - generic [ref=f12e27]:
+          - generic [ref=f12e28]: みお
+          - generic [ref=f12e29]: ・10月9日 03:50
+          - generic [ref=f12e30]: お知らせ
+        - paragraph [ref=f12e31]:
+          - link "今週の振り返り" [ref=f12e32] [cursor=pointer]:
+            - /url: http://localhost/posts/24
+        - paragraph [ref=f12e33]: "進んだこと: 認可の仕組みが分かった。来週: 一覧画面の使い勝手をもう少し良くしたい。"
+    - article [ref=f12e34]:
+      - generic [ref=f12e35]: だ
+      - generic [ref=f12e36]:
+        - generic [ref=f12e37]:
+          - generic [ref=f12e38]: だいち
+          - generic [ref=f12e39]: ・10月9日 01:50
+          - generic [ref=f12e40]: 技術メモ
+        - paragraph [ref=f12e41]:
+          - link "ログの読み方が変わった" [ref=f12e42] [cursor=pointer]:
+            - /url: http://localhost/posts/23
+        - paragraph [ref=f12e43]: エラー画面を上から全部読むのをやめて、最初の1行と自分のコードの行だけ探すようにしたら速くなった。
+        - generic [ref=f12e44]:
+          - link "編集" [ref=f12e45] [cursor=pointer]:
+            - /url: http://localhost/posts/23/edit
+          - button "削除" [ref=f12e47] [cursor=pointer]
+    - article [ref=f12e48]:
+      - generic [ref=f12e49]: あ
+      - generic [ref=f12e50]:
+        - generic [ref=f12e51]:
+          - generic [ref=f12e52]: あかり
+          - generic [ref=f12e53]: ・10月8日 21:50
+          - generic [ref=f12e54]: 技術メモ
+        - paragraph [ref=f12e55]:
+          - link "コミットの粒度" [ref=f12e56] [cursor=pointer]:
+            - /url: http://localhost/posts/22
+        - paragraph [ref=f12e57]: 「あとで読む人が困らない大きさ」って言われて納得した。未来の自分も他人。
+    - article [ref=f12e58]:
+      - generic [ref=f12e59]: け
+      - generic [ref=f12e60]:
+        - generic [ref=f12e61]:
+          - generic [ref=f12e62]: けんと
+          - generic [ref=f12e63]: ・10月8日 17:50
+          - generic [ref=f12e64]: 雑記
+        - paragraph [ref=f12e65]:
+          - link "夕焼けがすごかった" [ref=f12e66] [cursor=pointer]:
+            - /url: http://localhost/posts/21
+        - paragraph [ref=f12e67]: ベランダから見えた空が完全に優勝していた。写真では伝わらないやつ。
+    - article [ref=f12e68]:
+      - generic [ref=f12e69]: は
+      - generic [ref=f12e70]:
+        - generic [ref=f12e71]:
+          - generic [ref=f12e72]: はるか
+          - generic [ref=f12e73]: ・10月8日 10:50
+          - generic [ref=f12e74]: 技術メモ
+        - paragraph [ref=f12e75]:
+          - link "テストを先に書いてみた" [ref=f12e76] [cursor=pointer]:
+            - /url: http://localhost/posts/20
+        - paragraph [ref=f12e77]: 先にテストを書くと「何ができたら完成か」を先に決めることになるんだな。設計の練習にもなる気がする。
+    - article [ref=f12e78]:
+      - generic [ref=f12e79]: ゆ
+      - generic [ref=f12e80]:
+        - generic [ref=f12e81]:
+          - generic [ref=f12e82]: ゆい
+          - generic [ref=f12e83]: ・10月8日 04:50
+          - generic [ref=f12e84]: 雑記
+        - paragraph [ref=f12e85]:
+          - link "早起きチャレンジ3日目" [ref=f12e86] [cursor=pointer]:
+            - /url: http://localhost/posts/19
+        - paragraph [ref=f12e87]: 3日続いた。えらい。ご褒美に少しいいパンを買った。明日も起きられるかは別の話。
+    - article [ref=f12e88]:
+      - generic [ref=f12e89]: そ
+      - generic [ref=f12e90]:
+        - generic [ref=f12e91]:
+          - generic [ref=f12e92]: そうた
+          - generic [ref=f12e93]: ・10月7日 18:50
+          - generic [ref=f12e94]: お知らせ
+        - paragraph [ref=f12e95]:
+          - link "プロフィール画像の話" [ref=f12e96] [cursor=pointer]:
+            - /url: http://localhost/posts/18
+        - paragraph [ref=f12e97]: アイコンの色が名前で決まるの、地味に気に入っている。私はずっとこの色でいたい。
+    - article [ref=f12e98]:
+      - generic [ref=f12e99]: み
+      - generic [ref=f12e100]:
+        - generic [ref=f12e101]:
+          - generic [ref=f12e102]: みお
+          - generic [ref=f12e103]: ・10月7日 13:50
+          - generic [ref=f12e104]: 雑記
+        - paragraph [ref=f12e105]:
+          - link "猫が邪魔をする" [ref=f12e106] [cursor=pointer]:
+            - /url: http://localhost/posts/17
+        - paragraph [ref=f12e107]: キーボードの上に乗ってくるのでペアプロの相手だと思うことにした。無言のレビュアー。
+    - article [ref=f12e108]:
+      - generic [ref=f12e109]: だ
+      - generic [ref=f12e110]:
+        - generic [ref=f12e111]:
+          - generic [ref=f12e112]: だいち
+          - generic [ref=f12e113]: ・10月7日 05:50
+          - generic [ref=f12e114]: お知らせ
+        - paragraph [ref=f12e115]:
+          - link "勉強会やります" [ref=f12e116] [cursor=pointer]:
+            - /url: http://localhost/posts/16
+        - paragraph [ref=f12e117]: 来週の金曜、オンラインでLaravelのもくもく会をやります。初心者歓迎です。気軽にどうぞ。
+        - generic [ref=f12e118]:
+          - link "編集" [ref=f12e119] [cursor=pointer]:
+            - /url: http://localhost/posts/16/edit
+          - button "削除" [ref=f12e121] [cursor=pointer]
+    - article [ref=f12e122]:
+      - generic [ref=f12e123]: あ
+      - generic [ref=f12e124]:
+        - generic [ref=f12e125]:
+          - generic [ref=f12e126]: あかり
+          - generic [ref=f12e127]: ・10月6日 20:50
+          - generic [ref=f12e128]: 雑記
+        - paragraph [ref=f12e129]:
+          - link "週末の予定" [ref=f12e130] [cursor=pointer]:
+            - /url: http://localhost/posts/15
+        - paragraph [ref=f12e131]: 土曜は友だちとカフェ巡り。日曜は溜まった課題を消化する日にする。宣言することで自分を縛る。
+    - article [ref=f12e132]:
+      - generic [ref=f12e133]: け
+      - generic [ref=f12e134]:
+        - generic [ref=f12e135]:
+          - generic [ref=f12e136]: けんと
+          - generic [ref=f12e137]: ・10月6日 12:50
+          - generic [ref=f12e138]: 技術メモ
+        - paragraph [ref=f12e139]:
+          - link "ポリシーを書いた" [ref=f12e140] [cursor=pointer]:
+            - /url: http://localhost/posts/14
+        - paragraph [ref=f12e141]: 「自分のポストだけ編集できる」を if 文の散らばりじゃなくて Policy に集めるの、読みやすくて良い。
+    - article [ref=f12e142]:
+      - generic [ref=f12e143]: は
+      - generic [ref=f12e144]:
+        - generic [ref=f12e145]:
+          - generic [ref=f12e146]: はるか
+          - generic [ref=f12e147]: ・10月6日 04:50
+          - generic [ref=f12e148]: 雑記
+        - paragraph [ref=f12e149]:
+          - link "雨の日の勉強" [ref=f12e150] [cursor=pointer]:
+            - /url: http://localhost/posts/13
+        - paragraph [ref=f12e151]: 外が雨だと集中できる説、自分にはけっこう当てはまる。今日は進んだ。
+    - article [ref=f12e152]:
+      - generic [ref=f12e153]: ゆ
+      - generic [ref=f12e154]:
+        - generic [ref=f12e155]:
+          - generic [ref=f12e156]: ゆい
+          - generic [ref=f12e157]: ・10月5日 17:50
+          - generic [ref=f12e158]: 技術メモ
+        - paragraph [ref=f12e159]:
+          - link "ミドルウェアのイメージ" [ref=f12e160] [cursor=pointer]:
+            - /url: http://localhost/posts/12
+        - paragraph [ref=f12e161]: 駅の改札みたいなものだと理解した。ホームに入る前に切符を確認する場所。auth はまさにそれ。
+    - article [ref=f12e162]:
+      - generic [ref=f12e163]: そ
+      - generic [ref=f12e164]:
+        - generic [ref=f12e165]:
+          - generic [ref=f12e166]: そうた
+          - generic [ref=f12e167]: ・10月5日 10:50
+          - generic [ref=f12e168]: 雑記
+        - paragraph [ref=f12e169]:
+          - link "観葉植物を買った" [ref=f12e170] [cursor=pointer]:
+            - /url: http://localhost/posts/11
+        - paragraph [ref=f12e171]: デスクに緑があるだけで作業のやる気が2割増える気がする。枯らさないように頑張る。
+    - article [ref=f12e172]:
+      - generic [ref=f12e173]: み
+      - generic [ref=f12e174]:
+        - generic [ref=f12e175]:
+          - generic [ref=f12e176]: みお
+          - generic [ref=f12e177]: ・10月5日 02:50
+          - generic [ref=f12e178]: 技術メモ
+        - paragraph [ref=f12e179]:
+          - link "ルートの命名" [ref=f12e180] [cursor=pointer]:
+            - /url: http://localhost/posts/10
+        - paragraph [ref=f12e181]: route('posts.index') みたいに名前で呼べるようにしておくと、URLを変えてもリンクが壊れないの偉い。
+    - article [ref=f12e182]:
+      - generic [ref=f12e183]: だ
+      - generic [ref=f12e184]:
+        - generic [ref=f12e185]:
+          - generic [ref=f12e186]: だいち
+          - generic [ref=f12e187]: ・10月4日 15:50
+          - generic [ref=f12e188]: 雑記
+        - paragraph [ref=f12e189]:
+          - link "深夜のラーメン" [ref=f12e190] [cursor=pointer]:
+            - /url: http://localhost/posts/9
+        - paragraph [ref=f12e191]: 我慢できずに食べてしまった。後悔はしていない。明日の自分がなんとかする。
+        - generic [ref=f12e192]:
+          - link "編集" [ref=f12e193] [cursor=pointer]:
+            - /url: http://localhost/posts/9/edit
+          - button "削除" [ref=f12e195] [cursor=pointer]
+    - article [ref=f12e196]:
+      - generic [ref=f12e197]: あ
+      - generic [ref=f12e198]:
+        - generic [ref=f12e199]:
+          - generic [ref=f12e200]: あかり
+          - generic [ref=f12e201]: ・10月4日 06:50
+          - generic [ref=f12e202]: お知らせ
+        - paragraph [ref=f12e203]:
+          - link "読書メモはじめます" [ref=f12e204] [cursor=pointer]:
+            - /url: http://localhost/posts/8
+        - paragraph [ref=f12e205]: 読んだ本の要点をトピック「お知らせ」じゃなくて雑記に置くべきだった気もする。まあいいか。
+    - article [ref=f12e206]:
+      - generic [ref=f12e207]: け
+      - generic [ref=f12e208]:
+        - generic [ref=f12e209]:
+          - generic [ref=f12e210]: けんと
+          - generic [ref=f12e211]: ・10月3日 17:50
+          - generic [ref=f12e212]: 雑記
+        - paragraph [ref=f12e213]:
+          - link "今日の失敗" [ref=f12e214] [cursor=pointer]:
+            - /url: http://localhost/posts/7
+        - paragraph [ref=f12e215]: seeder を直したのに migrate だけ実行して「変わらない！」と10分悩んだ。fresh --seed でした。
+    - article [ref=f12e216]:
+      - generic [ref=f12e217]: は
+      - generic [ref=f12e218]:
+        - generic [ref=f12e219]:
+          - generic [ref=f12e220]: はるか
+          - generic [ref=f12e221]: ・10月3日 09:50
+          - generic [ref=f12e222]: 技術メモ
+        - paragraph [ref=f12e223]:
+          - link "バリデーションの置き場所" [ref=f12e224] [cursor=pointer]:
+            - /url: http://localhost/posts/6
+        - paragraph [ref=f12e225]: コントローラーに書くかFormRequestに分けるか迷い中。画面が増えてきたら分ける、でいいのかな。
+    - article [ref=f12e226]:
+      - generic [ref=f12e227]: ゆ
+      - generic [ref=f12e228]:
+        - generic [ref=f12e229]:
+          - generic [ref=f12e230]: ゆい
+          - generic [ref=f12e231]: ・10月3日 00:50
+          - generic [ref=f12e232]: 雑記
+        - paragraph [ref=f12e233]:
+          - link "散歩日和" [ref=f12e234] [cursor=pointer]:
+            - /url: http://localhost/posts/5
+        - paragraph [ref=f12e235]: 午後から近所を1時間歩いた。歩いてる間に詰まってたバグの原因を思いついたのはなぜ。
+    - article [ref=f12e236]:
+      - generic [ref=f12e237]: そ
+      - generic [ref=f12e238]:
+        - generic [ref=f12e239]:
+          - generic [ref=f12e240]: そうた
+          - generic [ref=f12e241]: ・10月2日 08:50
+          - generic [ref=f12e242]: 技術メモ
+        - paragraph [ref=f12e243]:
+          - link "N+1にはまった" [ref=f12e244] [cursor=pointer]:
+            - /url: http://localhost/posts/4
+        - paragraph [ref=f12e245]: 一覧画面が急に重くなって調べたら N+1 だった。with() を1個足すだけで直るの、拍子抜けする。
+    - article [ref=f12e246]:
+      - generic [ref=f12e247]: み
+      - generic [ref=f12e248]:
+        - generic [ref=f12e249]:
+          - generic [ref=f12e250]: みお
+          - generic [ref=f12e251]: ・10月2日 04:50
+          - generic [ref=f12e252]: 雑記
+        - paragraph [ref=f12e253]:
+          - link "朝のルーティン" [ref=f12e254] [cursor=pointer]:
+            - /url: http://localhost/posts/3
+        - paragraph [ref=f12e255]: コーヒーを淹れてから机に座るまでが一番気持ちいい時間かもしれない。
+    - article [ref=f12e256]:
+      - generic [ref=f12e257]: だ
+      - generic [ref=f12e258]:
+        - generic [ref=f12e259]:
+          - generic [ref=f12e260]: だいち
+          - generic [ref=f12e261]: ・10月1日 11:50
+          - generic [ref=f12e262]: 技術メモ
+        - paragraph [ref=f12e263]:
+          - link "マイグレーションの向き" [ref=f12e264] [cursor=pointer]:
+            - /url: http://localhost/posts/2
+        - paragraph [ref=f12e265]: up と down を書く意味がやっと腹落ちした。戻せる変更として書くと安心感が全然違う。
+        - generic [ref=f12e266]:
+          - link "編集" [ref=f12e267] [cursor=pointer]:
+            - /url: http://localhost/posts/2/edit
+          - button "削除" [ref=f12e269] [cursor=pointer]
+    - article [ref=f12e270]:
+      - generic [ref=f12e271]: は
+      - generic [ref=f12e272]:
+        - generic [ref=f12e273]:
+          - generic [ref=f12e274]: はるか
+          - generic [ref=f12e275]: ・9月30日 22:50
+          - generic [ref=f12e276]: お知らせ
+        - paragraph [ref=f12e277]:
+          - link "はじめまして" [ref=f12e278] [cursor=pointer]:
+            - /url: http://localhost/posts/1
+        - paragraph [ref=f12e279]: つぶやき投稿、はじめました。思ったことをぽつぽつ置いていきます。よろしくお願いします。

@@ -18,6 +18,13 @@ class Post extends Model
         'content',
     ];
 
+    public function wasEdited(): bool
+    {
+        return $this->created_at !== null
+            && $this->updated_at !== null
+            && $this->updated_at->greaterThan($this->created_at);
+    }
+
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);

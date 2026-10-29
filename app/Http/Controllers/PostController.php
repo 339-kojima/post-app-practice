@@ -73,7 +73,11 @@ class PostController extends Controller
             'category_id' => 'required|exists:categories,id',
         ]);
 
-        $post->update($validated);
+        $post->fill($validated);
+        $post->updated_at = now()->greaterThan($post->created_at)
+            ? now()
+            : $post->created_at->copy()->addSecond();
+        $post->save();
 
         return redirect()->route('posts.index');
     }

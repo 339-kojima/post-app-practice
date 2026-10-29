@@ -1,0 +1,25 @@
+- generic [ref=f10e2]:
+  - banner [ref=f10e3]:
+    - link "つ つぶやき投稿アプリ" [ref=f10e5] [cursor=pointer]:
+      - /url: http://localhost/posts
+      - generic [ref=f10e6]: つ
+      - text: つぶやき投稿アプリ
+    - generic [ref=f10e7]: ポストを編集
+  - main [ref=f10e8]:
+    - generic [ref=f10e9]:
+      - generic [ref=f10e10]:
+        - generic [ref=f10e11]: タイトル
+        - textbox "タイトル" [ref=f10e12]: テストを先に書いてみた
+      - generic [ref=f10e13]:
+        - generic [ref=f10e14]: トピック
+        - combobox "トピック" [ref=f10e15]:
+          - option "お知らせ"
+          - option "技術メモ" [selected]
+          - option "雑記"
+      - generic [ref=f10e16]:
+        - generic [ref=f10e17]: 本文
+        - textbox "本文" [ref=f10e18]: 先にテストを書くと「何ができたら完成か」を先に決めることになるんだな。設計の練習にもなる気がする。
+      - generic [ref=f10e19]:
+        - button "更新" [ref=f10e20] [cursor=pointer]
+        - link "キャンセル" [ref=f10e21] [cursor=pointer]:
+          - /url: http://localhost/posts

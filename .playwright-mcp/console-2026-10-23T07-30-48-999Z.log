@@ -1,0 +1,2 @@
+[   69304ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ http://localhost/login:0
+[  117679ms] [ERROR] Failed to load resource: the server responded with a status of 403 (Forbidden) @ http://localhost/posts/25/replies/5:0

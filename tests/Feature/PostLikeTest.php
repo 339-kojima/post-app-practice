@@ -29,6 +29,8 @@ class PostLikeTest extends TestCase
         $this->actingAs($user)
             ->get(route('posts.index'))
             ->assertSee('いいね済み · 1')
+            ->assertSee('class="like-button is-liked"', false)
+            ->assertSee('aria-pressed="true"', false)
             ->assertDontSee('編集済み');
         $this->assertDatabaseHas('posts', [
             'id' => $post->id,
@@ -52,7 +54,9 @@ class PostLikeTest extends TestCase
         ]);
         $this->actingAs($user)
             ->get(route('posts.index'))
-            ->assertSee('いいね · 0');
+            ->assertSee('いいね · 0')
+            ->assertSee('class="like-button"', false)
+            ->assertSee('aria-pressed="false"', false);
     }
 
     public function test_a_user_can_like_a_post_only_once_and_count_is_shared(): void
@@ -67,7 +71,9 @@ class PostLikeTest extends TestCase
         $this->assertDatabaseCount('post_likes', 1);
         $this->actingAs($viewer)
             ->get(route('posts.index'))
-            ->assertSee('いいね · 1');
+            ->assertSee('いいね · 1')
+            ->assertSee('aria-pressed="false"', false)
+            ->assertDontSee('aria-pressed="true"', false);
     }
 
     public function test_like_routes_require_authentication(): void

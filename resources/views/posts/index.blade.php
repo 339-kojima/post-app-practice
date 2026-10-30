@@ -37,6 +37,7 @@
         .post-actions a, .post-actions button { background: none; border: none; padding: 0; color: #5B6570; font-size: 0.8rem; font-weight: 600; cursor: pointer; font-family: inherit; }
         .post-actions a:hover { color: #0F1419; text-decoration: underline; text-underline-offset: 3px; }
         .post-actions button:hover { color: #D6402C; text-decoration: underline; text-underline-offset: 3px; }
+        .post-actions .like-button.is-liked { color: #D6402C; }
         .post-actions a:focus-visible, .post-actions button:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; border-radius: 4px; }
         .empty { color: #5B6570; text-align: center; padding: 3.5rem 1rem; }
     </style>
@@ -114,7 +115,11 @@
                                     @if ($post->liked_by_user)
                                         @method('DELETE')
                                     @endif
-                                    <button type="submit" aria-pressed="{{ $post->liked_by_user ? 'true' : 'false' }}">
+                                    <button
+                                        type="submit"
+                                        class="like-button{{ $post->liked_by_user ? ' is-liked' : '' }}"
+                                        aria-pressed="{{ $post->liked_by_user ? 'true' : 'false' }}"
+                                    >
                                         {{ $post->liked_by_user ? 'いいね済み' : 'いいね' }} · {{ $post->likes_count }}
                                     </button>
                                 </form>

@@ -108,6 +108,17 @@
                             </div>
                             <p class="post-title"><a href="{{ route('posts.show', $post) }}">{{ $post->title }}</a></p>
                             <p class="post-text">{{ $post->content }}</p>
+                            <div class="post-actions">
+                                <form action="{{ route($post->liked_by_user ? 'posts.likes.destroy' : 'posts.likes.store', $post) }}" method="POST">
+                                    @csrf
+                                    @if ($post->liked_by_user)
+                                        @method('DELETE')
+                                    @endif
+                                    <button type="submit" aria-pressed="{{ $post->liked_by_user ? 'true' : 'false' }}">
+                                        {{ $post->liked_by_user ? 'いいね済み' : 'いいね' }} · {{ $post->likes_count }}
+                                    </button>
+                                </form>
+                            </div>
                             @canany(['update', 'delete'], $post)
                                 <div class="post-actions">
                                     @can('update', $post)

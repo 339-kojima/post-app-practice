@@ -3,11 +3,28 @@
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostLikeController;
 use App\Http\Controllers\ReplyController;
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+// Fortify のルートが利用できない環境でもログイン／ログアウトできるようにする。
+if (! Route::has('login')) {
+    Route::get('/login', [AuthController::class, 'create'])
+        ->middleware('guest')
+        ->name('login');
+    Route::post('/login', [AuthController::class, 'store'])
+        ->middleware('guest')
+        ->name('login.store');
+}
+
+if (! Route::has('logout')) {
+    Route::post('/logout', [AuthController::class, 'destroy'])
+        ->middleware('auth')
+        ->name('logout');
+}
 
 // 認証が必要なルート
 Route::middleware('auth')->group(function () {

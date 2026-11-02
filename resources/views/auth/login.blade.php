@@ -58,9 +58,11 @@
             <button type="submit">ログイン</button>
         </form>
 
-        <div class="links">
-            はじめてですか？ <a href="{{ route('register') }}">アカウントを作成</a>
-        </div>
+        @if (Route::has('register'))
+            <div class="links">
+                はじめてですか？ <a href="{{ route('register') }}">アカウントを作成</a>
+            </div>
+        @endif
     </div>
 </body>
 </html>

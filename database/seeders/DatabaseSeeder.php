@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use App\Models\Category;
 use App\Models\Post;
+use App\Models\Tag;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -16,6 +17,11 @@ class DatabaseSeeder extends Seeder
         $notice = Category::create(['name' => 'お知らせ']);
         $tech = Category::create(['name' => '技術メモ']);
         $etc = Category::create(['name' => '雑記']);
+
+        // ハッシュタグ（トピックとは別の分類）
+        foreach (['Laravel', 'PHP', '質問', '学習記録', '読書'] as $tagName) {
+            Tag::create(['name' => $tagName]);
+        }
 
         // 検証用アカウント（メールとパスワードは変更しない）
         $haruka = User::create([

@@ -20,6 +20,11 @@
         .logout-btn:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; }
         .page-title { padding: 0.55rem 1rem 0.7rem; font-weight: 800; font-size: 1.06rem; }
         .compose { display: inline-block; margin: 0.8rem 1rem 0; padding: 0.58rem 1rem; border-radius: 999px; background: #0F1419; color: #fff; font-size: 0.85rem; font-weight: 700; }
+        .tag-filter { display: flex; align-items: center; flex-wrap: wrap; gap: 0.45rem; padding: 0.9rem 1rem; border-bottom: 1px solid #EFF1F4; }
+        .tag-filter-label { width: 100%; color: #5B6570; font-size: 0.78rem; font-weight: 700; }
+        .tag-chip { display: inline-block; border: 1px solid #D3D9DE; border-radius: 999px; padding: 0.2rem 0.65rem; color: #2F5AA8; background: #F5F8FC; font-size: 0.78rem; font-weight: 700; }
+        .tag-chip:hover, .tag-chip.is-selected { color: #fff; background: #2F5AA8; border-color: #2F5AA8; }
+        .post-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.45rem; }
         .post { display: flex; gap: 0.75rem; padding: 0.9rem 1rem; border-bottom: 1px solid #EFF1F4; }
         .post:hover { background: #F7F8F9; }
         .avatar { width: 44px; height: 44px; border-radius: 999px; flex-shrink: 0; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; }
@@ -60,8 +65,19 @@
 
         <main class="feed">
             <a class="compose" href="{{ route('posts.create') }}">ポストを書く</a>
+            <nav class="tag-filter" aria-label="ハッシュタグで絞り込む">
+                <span class="tag-filter-label">ハッシュタグ</span>
+                <a class="tag-chip{{ $selectedTag ? '' : ' is-selected' }}" href="{{ route('posts.index') }}" @if (! $selectedTag) aria-current="true" @endif>すべて</a>
+                @foreach ($tags as $tag)
+                    <a
+                        class="tag-chip{{ $selectedTag?->id === $tag->id ? ' is-selected' : '' }}"
+                        href="{{ route('posts.index', ['tag' => $tag->id]) }}"
+                        @if ($selectedTag?->id === $tag->id) aria-current="true" @endif
+                    >#{{ $tag->name }}</a>
+                @endforeach
+            </nav>
             @if($posts->isEmpty())
-                <p class="empty">まだポストがありません。</p>
+                <p class="empty">{{ $selectedTag ? 'このタグが付いたポストはありません。' : 'まだポストがありません。' }}</p>
             @else
                 @php
                     // アイコンの色は登録した名前から決まる（crc32 % 18）
@@ -109,6 +125,13 @@
                             </div>
                             <p class="post-title"><a href="{{ route('posts.show', $post) }}">{{ $post->title }}</a></p>
                             <p class="post-text">{{ $post->content }}</p>
+                            @if ($post->tags->isNotEmpty())
+                                <div class="post-tags" aria-label="ハッシュタグ">
+                                    @foreach ($post->tags as $tag)
+                                        <a class="tag-chip" href="{{ route('posts.index', ['tag' => $tag->id]) }}">#{{ $tag->name }}</a>
+                                    @endforeach
+                                </div>
+                            @endif
                             <div class="post-actions">
                                 <form action="{{ route($post->liked_by_user ? 'posts.likes.destroy' : 'posts.likes.store', $post) }}" method="POST">
                                     @csrf

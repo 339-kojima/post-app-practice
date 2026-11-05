@@ -59,6 +59,17 @@
                     <textarea id="content" name="content" required>{{ old('content') }}</textarea>
                     @error('content')<p class="error">{{ $message }}</p>@enderror
                 </div>
+                <div class="form-group">
+                    <label for="tags">ハッシュタグ（任意・複数選択可）</label>
+                    <select id="tags" name="tags[]" multiple size="5">
+                        @foreach ($tags as $tag)
+                            <option value="{{ $tag->id }}" @selected(in_array($tag->id, (array) old('tags', [])))>#{{ $tag->name }}</option>
+                        @endforeach
+                    </select>
+                    <p>タグを選択しない場合、タグなしで投稿されます。</p>
+                    @error('tags')<p class="error">{{ $message }}</p>@enderror
+                    @error('tags.*')<p class="error">{{ $message }}</p>@enderror
+                </div>
                 <div class="actions">
                     <button type="submit" class="btn btn-primary">投稿</button>
                     <a href="{{ route('posts.index') }}" class="btn btn-secondary">戻る</a>

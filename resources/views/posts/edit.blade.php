@@ -72,6 +72,23 @@
                     @enderror
                 </div>
 
+                @php($selectedTagIds = (array) old('tags', $post->tags->modelKeys()))
+                <div class="form-group">
+                    <label for="tags">ハッシュタグ（任意・複数選択可）</label>
+                    <select id="tags" name="tags[]" multiple size="5">
+                        @foreach ($tags as $tag)
+                            <option value="{{ $tag->id }}" @selected(in_array($tag->id, $selectedTagIds))>#{{ $tag->name }}</option>
+                        @endforeach
+                    </select>
+                    <p>タグを選択しない場合、タグなしになります。</p>
+                    @error('tags')
+                        <p class="error">{{ $message }}</p>
+                    @enderror
+                    @error('tags.*')
+                        <p class="error">{{ $message }}</p>
+                    @enderror
+                </div>
+
                 <div class="actions">
                     <button type="submit" class="btn btn-primary">更新</button>
                     <a href="{{ route('posts.index') }}" class="btn btn-secondary">キャンセル</a>

@@ -25,6 +25,7 @@ class PostController extends Controller
             ->with('tags')
             ->withCount('likes')
             ->withExists(['likes as liked_by_user' => fn ($query) => $query->where('users.id', auth()->id())])
+            ->withExists(['bookmarks as bookmarked_by_user' => fn ($query) => $query->where('users.id', auth()->id())])
             ->when($selectedTag, fn ($query) => $query->whereHas(
                 'tags',
                 fn ($tagQuery) => $tagQuery->whereKey($selectedTag->id),

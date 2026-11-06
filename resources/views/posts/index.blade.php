@@ -20,6 +20,7 @@
         .logout-btn:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; }
         .page-title { padding: 0.55rem 1rem 0.7rem; font-weight: 800; font-size: 1.06rem; }
         .compose { display: inline-block; margin: 0.8rem 1rem 0; padding: 0.58rem 1rem; border-radius: 999px; background: #0F1419; color: #fff; font-size: 0.85rem; font-weight: 700; }
+        .bookmark-link { display: inline-block; margin: 0.8rem 0 0 0.45rem; padding: 0.58rem 1rem; border: 1px solid #D3D9DE; border-radius: 999px; font-size: 0.85rem; font-weight: 700; }
         .tag-filter { display: flex; align-items: center; flex-wrap: wrap; gap: 0.45rem; padding: 0.9rem 1rem; border-bottom: 1px solid #EFF1F4; }
         .tag-filter-label { width: 100%; color: #5B6570; font-size: 0.78rem; font-weight: 700; }
         .tag-chip { display: inline-block; border: 1px solid #D3D9DE; border-radius: 999px; padding: 0.2rem 0.65rem; color: #2F5AA8; background: #F5F8FC; font-size: 0.78rem; font-weight: 700; }
@@ -43,6 +44,7 @@
         .post-actions a:hover { color: #0F1419; text-decoration: underline; text-underline-offset: 3px; }
         .post-actions button:hover { color: #D6402C; text-decoration: underline; text-underline-offset: 3px; }
         .post-actions .like-button.is-liked { color: #D6402C; }
+        .post-actions .bookmark-button.is-bookmarked { color: #2F5AA8; }
         .post-actions a:focus-visible, .post-actions button:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; border-radius: 4px; }
         .empty { color: #5B6570; text-align: center; padding: 3.5rem 1rem; }
     </style>
@@ -65,6 +67,7 @@
 
         <main class="feed">
             <a class="compose" href="{{ route('posts.create') }}">ポストを書く</a>
+            <a class="bookmark-link" href="{{ route('bookmarks.index') }}">ブックマーク一覧</a>
             <nav class="tag-filter" aria-label="ハッシュタグで絞り込む">
                 <span class="tag-filter-label">ハッシュタグ</span>
                 <a class="tag-chip{{ $selectedTag ? '' : ' is-selected' }}" href="{{ route('posts.index') }}" @if (! $selectedTag) aria-current="true" @endif>すべて</a>
@@ -144,6 +147,12 @@
                                         aria-pressed="{{ $post->liked_by_user ? 'true' : 'false' }}"
                                     >
                                         {{ $post->liked_by_user ? 'いいね済み' : 'いいね' }} · {{ $post->likes_count }}
+                                    </button>
+                                </form>
+                                <form action="{{ route('posts.bookmarks.toggle', $post) }}" method="POST">
+                                    @csrf
+                                    <button type="submit" class="bookmark-button{{ $post->bookmarked_by_user ? ' is-bookmarked' : '' }}" aria-pressed="{{ $post->bookmarked_by_user ? 'true' : 'false' }}">
+                                        {{ $post->bookmarked_by_user ? 'ブックマーク解除' : 'ブックマーク' }}
                                     </button>
                                 </form>
                             </div>

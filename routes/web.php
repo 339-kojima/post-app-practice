@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\PostLikeController;
+use App\Http\Controllers\BookmarkController;
 use App\Http\Controllers\ReplyController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,7 @@ if (! Route::has('logout')) {
 // 認証が必要なルート
 Route::middleware('auth')->group(function () {
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
+    Route::get('/bookmarks', [BookmarkController::class, 'index'])->name('bookmarks.index');
     Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
     Route::get('/posts/{post}', [PostController::class, 'show'])->name('posts.show');
@@ -37,6 +39,7 @@ Route::middleware('auth')->group(function () {
     Route::delete('/posts/{post}', [PostController::class, 'destroy'])->name('posts.destroy');
     Route::post('/posts/{post}/likes', [PostLikeController::class, 'store'])->name('posts.likes.store');
     Route::delete('/posts/{post}/likes', [PostLikeController::class, 'destroy'])->name('posts.likes.destroy');
+    Route::post('/posts/{post}/bookmark', [BookmarkController::class, 'toggle'])->name('posts.bookmarks.toggle');
     Route::post('/posts/{post}/replies', [ReplyController::class, 'store'])->name('replies.store');
     Route::delete('/posts/{post}/replies/{reply}', [ReplyController::class, 'destroy'])->name('replies.destroy');
 });

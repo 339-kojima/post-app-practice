@@ -20,6 +20,10 @@
         .logout-btn:focus-visible { outline: 2px solid #E8792B; outline-offset: 2px; }
         .page-title { padding: 0.55rem 1rem 0.7rem; font-weight: 800; font-size: 1.06rem; }
         .compose { display: inline-block; margin: 0.8rem 1rem 0; padding: 0.58rem 1rem; border-radius: 999px; background: #0F1419; color: #fff; font-size: 0.85rem; font-weight: 700; }
+        .search-form { display: flex; gap: 0.5rem; padding: 0.9rem 1rem 0; }
+        .search-input { flex: 1; min-width: 0; border: 1px solid #D3D9DE; border-radius: 999px; padding: 0.55rem 0.9rem; font: inherit; }
+        .search-button { border: 0; border-radius: 999px; padding: 0.55rem 1rem; background: #0F1419; color: #fff; font-weight: 700; cursor: pointer; }
+        .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
         .tag-filter { display: flex; align-items: center; flex-wrap: wrap; gap: 0.45rem; padding: 0.9rem 1rem; border-bottom: 1px solid #EFF1F4; }
         .tag-filter-label { width: 100%; color: #5B6570; font-size: 0.78rem; font-weight: 700; }
         .tag-chip { display: inline-block; border: 1px solid #D3D9DE; border-radius: 999px; padding: 0.2rem 0.65rem; color: #2F5AA8; background: #F5F8FC; font-size: 0.78rem; font-weight: 700; }
@@ -65,6 +69,11 @@
 
         <main class="feed">
             <a class="compose" href="{{ route('posts.create') }}">ポストを書く</a>
+            <form class="search-form" action="{{ route('posts.index') }}" method="GET" role="search">
+                <label class="sr-only" for="post-search">ポストを検索</label>
+                <input class="search-input" id="post-search" type="search" name="search" value="{{ $search }}" placeholder="タイトル・本文・投稿者・トピックを検索">
+                <button class="search-button" type="submit">検索</button>
+            </form>
             <nav class="tag-filter" aria-label="ハッシュタグで絞り込む">
                 <span class="tag-filter-label">ハッシュタグ</span>
                 <a class="tag-chip{{ $selectedTag ? '' : ' is-selected' }}" href="{{ route('posts.index') }}" @if (! $selectedTag) aria-current="true" @endif>すべて</a>
@@ -77,7 +86,7 @@
                 @endforeach
             </nav>
             @if($posts->isEmpty())
-                <p class="empty">{{ $selectedTag ? 'このタグが付いたポストはありません。' : 'まだポストがありません。' }}</p>
+                <p class="empty">{{ $search !== '' ? '該当するポストはありません' : ($selectedTag ? 'このタグが付いたポストはありません。' : 'まだポストがありません。') }}</p>
             @else
                 @php
                     // アイコンの色は登録した名前から決まる（crc32 % 18）

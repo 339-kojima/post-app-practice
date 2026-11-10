@@ -19,6 +19,8 @@ class PostController extends Controller
 
             $selectedTag = Tag::findOrFail($tagId);
         }
+        $search = $request->query('search', '');
+        $search = is_string($search) ? $search : '';
 
         // 投稿者とトピックをあわせて取得し、新しい投稿順で一覧表示する。
         $posts = Post::with(['user', 'category'])
@@ -29,10 +31,19 @@ class PostController extends Controller
                 'tags',
                 fn ($tagQuery) => $tagQuery->whereKey($selectedTag->id),
             ))
+            ->when($search !== '', function ($query) use ($search) {
+                $term = '%'.$search.'%';
+                $query->where(function ($searchQuery) use ($term) {
+                    $searchQuery->where('title', 'like', $term)
+                        ->orWhere('content', 'like', $term)
+                        ->orWhereHas('user', fn ($userQuery) => $userQuery->where('name', 'like', $term))
+                        ->orWhereHas('category', fn ($categoryQuery) => $categoryQuery->where('name', 'like', $term));
+                });
+            })
             ->latest()
             ->get();
 
-        return view('posts.index', compact('posts', 'tags', 'selectedTag'));
+        return view('posts.index', compact('posts', 'tags', 'selectedTag', 'search'));
     }
 
     public function create()
